@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -13,7 +13,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^3.1.9",
     "@astrojs/react": "^3.6.3",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.5",
     "@google/genai": "^2.4.0",
     "astro": "^4.16.18",

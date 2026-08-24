@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const notes = await getCollection('notes');
+---
+
+<BaseLayout
+  title="Skilldotpy - #1 NIELIT O Level & CCC Free Notes, Courses & CBT Practice"
+  description="India's #1 learning platform for NIELIT O Level (M1-R5.1, M2-R5.1, M3-R5.1, M4-R5.1) and CCC exams. Free chapter notes, online CBT tests, Python practical labs, and PDF downloads."
+  keywords={[
+    "NIELIT O Level notes free download",
+    "CCC online mock test 2026",
+    "M1-R5.1 IT tools notes Hindi",
+    "M3-R5.1 Python practical exam questions",
+    "Skilldotpy O level class",
+    "LibreOffice shortcut keys CCC",
+    "Aditya Pathak Skilldotpy"
+  ]}
+>
+  <!-- Hero Section (Clean, high contrast, fast loading) -->
+  <section class="relative bg-gradient-to-b from-blue-50/70 to-white py-14 sm:py-20 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-bold mb-4">
+          <span>🚀 Aligned with NIELIT Revision 5.1 (NSQF Level 4)</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-4">
+          Crack NIELIT <span class="text-blue-600">O Level & CCC</span> with Grade S Confidence.
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+          Free chapter-wise notes in Hindi & English, CBT exam simulator with real timer, Python coding practical lab, and instant PDF downloads.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="/o-level"
+            class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition"
+          >
+            Explore O-Level (M1-M4)
+          </a>
+          <a
+            href="/ccc"
+            class="px-5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-sm shadow-xs transition"
+          >
+            CCC Syllabus & Shortcuts
+          </a>
+          <a
+            href="/mock-test"
+            class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow-xs transition"
+          >
+            Take Free CBT Test ⚡
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NIELIT O Level 4 Core Modules Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+        NIELIT O Level Modules (R5.1)
+      </h2>
+      <p class="text-sm text-slate-600">
+        Complete syllabus notes, practical code examples, and chapter-wise MCQ tests.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- M1-R5.1 -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs hover:border-blue-300 hover:shadow-md transition">
+        <span class="inline-block px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold mb-3">M1-R5.1</span>
+        <h3 class="font-bold text-base text-slate-900 mb-1">IT Tools & Network Basics</h3>
+        <p class="text-xs text-slate-500 mb-4">LibreOffice Writer, Calc, Impress, OS & Digital Financial Tools.</p>
+        <a href="/o-level#m1" class="text-xs font-bold text-blue-600 hover:underline">View Syllabus & Notes →</a>
+      </div>
+
+      <!-- M2-R5.1 -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs hover:border-emerald-300 hover:shadow-md transition">
+        <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 text-xs font-bold mb-3">M2-R5.1</span>
+        <h3 class="font-bold text-base text-slate-900 mb-1">Web Design & Publishing</h3>
+        <p class="text-xs text-slate-500 mb-4">HTML5, CSS3, W3.CSS, JavaScript, Angular & Photo Editing.</p>
+        <a href="/o-level#m2" class="text-xs font-bold text-emerald-600 hover:underline">View Syllabus & Notes →</a>
+      </div>
+
+      <!-- M3-R5.1 -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs hover:border-amber-300 hover:shadow-md transition">
+        <span class="inline-block px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 text-xs font-bold mb-3">M3-R5.1</span>
+        <h3 class="font-bold text-base text-slate-900 mb-1">Python Programming</h3>
+        <p class="text-xs text-slate-500 mb-4">Data types, control structures, functions, NumPy & practical lab questions.</p>
+        <a href="/o-level#m3" class="text-xs font-bold text-amber-600 hover:underline">View Syllabus & Notes →</a>
+      </div>
+
+      <!-- M4-R5.1 -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs hover:border-purple-300 hover:shadow-md transition">
+        <span class="inline-block px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 text-xs font-bold mb-3">M4-R5.1</span>
+        <h3 class="font-bold text-base text-slate-900 mb-1">Internet of Things (IoT)</h3>
+        <p class="text-xs text-slate-500 mb-4">Sensors, Actuators, Arduino, Raspberry Pi, Protocols & Security.</p>
+        <a href="/o-level#m4" class="text-xs font-bold text-purple-600 hover:underline">View Syllabus & Notes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Markdown / MDX Chapter Notes -->
+  <section class="bg-slate-100 py-16 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">
+            Latest Chapter Notes (MDX Powered)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600">Pure static HTML rendering for lightning fast reading & zero data usage.</p>
+        </div>
+        <a href="/resources" class="text-xs font-bold text-blue-600 hover:underline">View All Resources →</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {notes.map((note) => (
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs hover:shadow-md transition">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+              <span class="font-bold text-blue-600">{note.data.moduleCode}</span>
+              <span>{note.data.readingTime}</span>
+            </div>
+            <h3 class="font-bold text-base text-slate-900 mb-2 line-clamp-2">
+              {note.data.title}
+            </h3>
+            <p class="text-xs text-slate-600 mb-4 line-clamp-2">
+              {note.data.description}
+            </p>
+            <a
+              href={`/notes/${note.slug}`}
+              class="inline-block text-xs font-bold text-blue-600 hover:text-blue-800"
+            >
+              Read Full Chapter Note →
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

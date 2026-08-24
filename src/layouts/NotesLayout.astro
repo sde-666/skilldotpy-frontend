@@ -1,0 +1,100 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  entry: CollectionEntry<'notes'>;
+}
+
+const { entry } = Astro.props;
+const { title, hindiTitle, moduleCode, moduleName, chapterNumber, description, keywords, readingTime, lastUpdated, marksWeightage } = entry.data;
+---
+
+<BaseLayout
+  title={`${title} | Skilldotpy`}
+  description={description}
+  keywords={keywords}
+  type="article"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6 overflow-x-auto whitespace-nowrap">
+      <a href="/" class="hover:text-blue-600">Home</a>
+      <span>/</span>
+      <a href="/o-level" class="hover:text-blue-600">{moduleCode}</a>
+      <span>/</span>
+      <span class="text-slate-900 font-medium truncate">Chapter {chapterNumber}</span>
+    </nav>
+
+    <!-- Header Header Card -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs mb-8">
+      <div class="flex flex-wrap items-center gap-2 mb-3">
+        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-full">
+          {moduleCode}
+        </span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full">
+          Chapter {chapterNumber}
+        </span>
+        {marksWeightage && (
+          <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">
+            ⭐ {marksWeightage}
+          </span>
+        )}
+        <span class="text-xs text-slate-500 ml-auto">
+          ⏱️ {readingTime}
+        </span>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+        {title}
+      </h1>
+      {hindiTitle && (
+        <p class="text-base text-slate-600 font-medium mb-4">{hindiTitle}</p>
+      )}
+
+      <p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+        {description}
+      </p>
+    </div>
+
+    <!-- Main Content & Responsive Layout Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Article Body (Rendered MDX/Markdown) -->
+      <article class="lg:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-xs prose prose-slate max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-2 prose-a:text-blue-600 prose-pre:rounded-xl prose-table:border prose-table:border-slate-200">
+        <slot />
+      </article>
+
+      <!-- Sidebar Quick Links & Actions -->
+      <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+        <!-- Practice Quiz Callout -->
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-2xl p-6 shadow-md">
+          <span class="text-xs font-semibold uppercase tracking-wider text-blue-200">Online CBT Exam</span>
+          <h3 class="text-lg font-bold mt-1 mb-2">Practice {moduleCode} Test</h3>
+          <p class="text-xs text-blue-100 mb-4 leading-relaxed">
+            Test your knowledge with real NIELIT MCQs, instant scoring, and Hindi/English explanations.
+          </p>
+          <a
+            href="/mock-test"
+            class="block text-center py-2.5 px-4 bg-white text-blue-700 hover:bg-blue-50 font-bold text-xs rounded-xl shadow-xs transition"
+          >
+            Start Chapter Quiz →
+          </a>
+        </div>
+
+        <!-- Download & Mobile App Card -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+          <h3 class="font-bold text-sm text-slate-900 mb-2">📱 Study on Skilldotpy App</h3>
+          <p class="text-xs text-slate-600 mb-4">
+            Download offline PDF notes, practice practical compiler questions, and ask AI doubts 24x7.
+          </p>
+          <a
+            href="/app"
+            class="block text-center py-2 px-4 bg-slate-900 text-white hover:bg-slate-800 text-xs font-medium rounded-xl transition"
+          >
+            Install Free App
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

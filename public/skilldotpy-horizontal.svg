@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="100%" height="100%">
+  <!-- Horizontal Skill.py Brand Logo -->
+  <g transform="translate(10, 10)">
+    <!-- "Skill" -->
+    <text x="0" y="62" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" fill="#0F172A" letter-spacing="-1">Skill</text>
+    
+    <!-- Dot "." -->
+    <circle cx="140" cy="56" r="8" fill="#6C82E8" />
+    
+    <!-- "py" in Coral Red -->
+    <text x="154" y="62" font-family="'Courier New', 'Roboto Slab', Rockwell, Georgia, serif" font-size="70" font-weight="900" fill="#F45B69" letter-spacing="0.5">py</text>
+    
+    <!-- Subtitle: "Just learn skills..." -->
+    <text x="5" y="86" font-family="'Caveat', 'Comic Sans MS', cursive, sans-serif" font-size="20" font-weight="700" fill="#334155" letter-spacing="0.5">Just learn skills...</text>
+  </g>
+</svg>

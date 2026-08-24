@@ -1,0 +1,83 @@
+# ====================================================================
+# Skilldotpy - Official Robots.txt for Search Engine Optimization
+# Website: https://skilldotpy.com
+# Maintained for Googlebot, Bingbot, Applebot, DuckDuckBot, YandexBot
+# ====================================================================
+
+User-agent: *
+Allow: /
+Allow: /o-level
+Allow: /o-level/*
+Allow: /ccc
+Allow: /mock-test
+Allow: /practical-practice
+Allow: /practical-practice/*
+Allow: /notes
+Allow: /notes/*
+Allow: /resources
+Allow: /resources/*
+Allow: /courses
+Allow: /courses/*
+Allow: /tutorials
+Allow: /tutorials/*
+Allow: /youtube
+Allow: /app
+Allow: /app/*
+Allow: /downloads/
+Allow: /downloads/*.pdf
+Allow: /app-screenshots/
+Allow: /about
+Allow: /faq
+Allow: /contact
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Disallow Private & Admin Endpoints
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /api/
+Disallow: /api/*
+
+# --------------------------------------------------------------------
+# Googlebot Specific Rules
+# --------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+Allow: /o-level
+Allow: /o-level/*
+Allow: /ccc
+Allow: /mock-test
+Allow: /practical-practice
+Allow: /practical-practice/*
+Allow: /notes
+Allow: /notes/*
+Allow: /resources
+Allow: /resources/*
+Allow: /courses
+Allow: /courses/*
+Allow: /downloads/
+Allow: /downloads/*.pdf
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/*
+
+User-agent: Googlebot-Image
+Allow: /skilldotpy-logo.svg
+Allow: /skilldotpy-horizontal.svg
+Allow: /nielit-logo.svg
+Allow: /nielit-emblem.svg
+Allow: /app-screenshots/
+Allow: /public/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/*
+
+# --------------------------------------------------------------------
+# XML Sitemap Index
+# --------------------------------------------------------------------
+Sitemap: https://skilldotpy.com/sitemap.xml
+Host: skilldotpy.com

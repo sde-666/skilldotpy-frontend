@@ -1,0 +1,64 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-slate-900 text-slate-400 text-sm mt-20 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <!-- About Skilldotpy -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg">S</div>
+          <span class="text-white text-lg font-bold">Skilldotpy</span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          India's most trusted online preparation portal for NIELIT O Level (Revision 5.1) and CCC examinations. Free notes, chapter PDFs, mock test series, and practical code runners.
+        </p>
+        <div class="text-xs text-slate-500">
+          Created by <strong>Mr. Aditya Pathak</strong>
+        </div>
+      </div>
+
+      <!-- O Level Modules -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">NIELIT O Level Modules</h3>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/o-level#m1" class="hover:text-white transition">M1-R5.1: IT Tools & Network Basics</a></li>
+          <li><a href="/o-level#m2" class="hover:text-white transition">M2-R5.1: Web Design & Publishing</a></li>
+          <li><a href="/o-level#m3" class="hover:text-white transition">M3-R5.1: Python Programming</a></li>
+          <li><a href="/o-level#m4" class="hover:text-white transition">M4-R5.1: Internet of Things (IoT)</a></li>
+          <li><a href="/o-level#practical" class="hover:text-white transition">PR1 to PR4 Practical Exam Guides</a></li>
+        </ul>
+      </div>
+
+      <!-- CCC & Study Resources -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">CCC & Quick Links</h3>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/ccc" class="hover:text-white transition">CCC Complete Syllabus</a></li>
+          <li><a href="/ccc#shortcuts" class="hover:text-white transition">LibreOffice Shortcut Keys</a></li>
+          <li><a href="/mock-test" class="hover:text-white transition">Online CBT Mock Tests</a></li>
+          <li><a href="/resources" class="hover:text-white transition">Download Syllabus & Model Papers</a></li>
+          <li><a href="/app" class="hover:text-white transition">Skilldotpy Mobile App</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Social -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Connect & Legal</h3>
+        <ul class="space-y-2 text-xs">
+          <li><a href="https://youtube.com/@skilldotpy" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">YouTube Channel</a></li>
+          <li><a href="/about" class="hover:text-white transition">About Us</a></li>
+          <li><a href="/contact" class="hover:text-white transition">Contact & Support</a></li>
+          <li><a href="/legal/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+          <li><a href="/legal/terms" class="hover:text-white transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <p>© {currentYear} Skilldotpy.com. All rights reserved. Not affiliated with NIELIT official body.</p>
+      <p>Optimized for Google & Bing Fast Indexing with 100% Valid Schema.org Structured Data.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,13 @@
+// Instructions on where to place the Android APK file for downloads:
+//
+// 1. Place your compiled .apk file in the "/public" directory of this project.
+//    Recommended filename: "/public/skilldotpy-latest.apk" or "/public/skilldotpy-app.apk"
+//
+// 2. In Vite / React, any file placed inside the "/public" folder is automatically served
+//    at the root URL path:
+//    e.g. "/skilldotpy-latest.apk" -> https://yourdomain.com/skilldotpy-latest.apk
+//
+// 3. The APK download button in the app is configured to point to:
+//    "/skilldotpy-latest.apk" (or your custom URL in src/data/config.ts).
+//
+// 4. When students click "Download Official APK", their browser will immediately download the APK file!

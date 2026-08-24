@@ -15,8 +15,11 @@ export default defineConfig({
     mdx(),
     sitemap({
       filter: (page) => !page.includes('/admin'),
-      changefreq: 'weekly',
-      priority: 0.8,
+      serialize(item) {
+        item.changefreq = 'weekly';
+        item.priority = 0.8;
+        return item;
+      },
     }),
   ],
   markdown: {
